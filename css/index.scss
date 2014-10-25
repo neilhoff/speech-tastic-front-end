@@ -1,0 +1,31 @@
+// Import TwitterBootstrap
+@import '../bower_components/bootstrap-sass-official/assets/stylesheets/bootstrap';
+@import 'variables-mixins';
+
+body{
+  color: $color-text;
+}
+
+p {
+  font-family: $paragraph-font;
+  font-weight: $paragraph-font-weight;
+  font-size: $paragraph-font-size;
+}
+
+h1 {
+  font-family: $h1-font;
+  font-weight: $h1-font-weight;
+  font-size: $h1-font-size;
+}
+
+h2 {
+  font-family: $h2-font;
+  font-weight: $h2-font-weight;
+  font-size: $h2-font-size;
+}
+
+h3 {
+  font-family: $h3-font;
+  font-weight: $h3-font-weight;
+  font-size: $h3-font-size;
+}
