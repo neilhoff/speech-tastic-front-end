@@ -1,4 +1,24 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300);
 .style-guide {
   margin-left: 3em; }
+  .style-guide .color-styles li {
+    display: inline-block;
+    list-style-type: none;
+    padding-right: 20px;
+    width: 200px; }
+  .style-guide .blue-gray {
+    background-color: #2C3744; }
+  .style-guide .pink {
+    background-color: #DC254F; }
+  .style-guide .dark-blue {
+    background-color: #1E282C; }
+  .style-guide .light-blue {
+    background-color: #5A9FA3; }
+  .style-guide .blue-green {
+    background-color: #2B4946; }
+  .style-guide .color-text {
+    background-color: #555555; }
+  .style-guide .color-background {
+    background-color: #ffffff; }
 
 /*# sourceMappingURL=style-guide.css.map */
