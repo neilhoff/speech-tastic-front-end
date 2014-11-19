@@ -1,12 +1,24 @@
 <!DOCTYPE html>
-<html ng-app="speechTastic">
+<html lang="en" ng-app="speech-tastic">
     <head>
-        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <link rel="stylesheet" type="text/css" href="css/application.css">
         <script src="bower_components/angular/angular.min.js"></script>
+        <script src="js/app.js"></script>
+
+        <!-- Ensure proper rendering and touch zooming -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+        <title>Speech-Tastic</title>
     </head>
     <body>
-    <img src="images/title.png">
+        <div class="container">
+            <a href="/"><img src="images/title.png" alt="Speech-Tastic" class="img-responsive center-block logo"></a>
 
+                <top-nav></top-nav>
 
+                <latest-posts></latest-posts>
+
+        </div>
     </body>
 </html>

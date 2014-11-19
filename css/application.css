@@ -1059,7 +1059,7 @@ mark,
   background-color: #fcf8e3;
   padding: .2em; }
 
-.text-left {
+.text-left, .latest-posts .post p.desc {
   text-align: left; }
 
 .text-right {
@@ -5084,7 +5084,7 @@ button.close {
 .clearfix:after {
   clear: both; }
 
-.center-block {
+.center-block, .latest-posts .post {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -5288,17 +5288,6 @@ button.close {
 @media print {
   .hidden-print {
     display: none !important; } }
-img.logo {
-  margin-top: 2em; }
-
-ul.top-nav {
-  margin-top: 4em;
-  font-family: "Raleway", sans-serif;
-  font-size: 1.42em; }
-  ul.top-nav li a {
-    color: #555555;
-    font-weight: 200; }
-
 body {
   color: #555555; }
 
@@ -5322,4 +5311,23 @@ h3 {
   font-weight: 200;
   font-size: 1.2em; }
 
-/*# sourceMappingURL=index.css.map */
+img.logo {
+  margin-top: 2em; }
+
+ul.top-nav {
+  margin-top: 4em;
+  font-family: "Raleway", sans-serif;
+  font-size: 1.42em; }
+  ul.top-nav li a {
+    color: #555555;
+    font-weight: 200; }
+
+.latest-posts {
+  margin-top: 50px; }
+  .latest-posts .post {
+    width: 450px; }
+    .latest-posts .post p.desc {
+      margin-left: 8px;
+      margin-top: 10px; }
+
+/*# sourceMappingURL=application.css.map */

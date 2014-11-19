@@ -1,0 +1,13 @@
+.latest-posts {
+  margin-top: 50px;
+  .post {
+    @extend .center-block;
+    width: 450px;
+    p.desc {
+      @extend .text-left;
+      margin-left: 8px;
+      margin-top: 10px;
+    }
+  }
+}
+
