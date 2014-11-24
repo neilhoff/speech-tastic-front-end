@@ -20,6 +20,11 @@
                     templateUrl: 'templates/store.html',
                     controller: 'StoreController'
                 })
+
+                .when('/about', {
+                    templateUrl: 'templates/about.html',
+                    controller: 'AboutController'
+                })
             ;
         }]);
 
@@ -34,19 +39,24 @@
 
 
     app.controller('LatestPostsController', ['$scope', '$http', function($scope, $http) {
-        $scope.blogActive = true;
+
 
     }]);
 
     app.controller('ShowPostController', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
-        $scope.showPostactive = true;
+
         $scope.slug = $routeParams.slug;
         console.log($scope.slug);
 
     }]);
 
     app.controller('StoreController', ['$scope', '$http', function($scope, $http) {
-        $scope.isActive = true;
+
+
+    }]);
+
+    app.controller('LatestPostsController', ['$scope', '$http', function($scope, $http) {
+
 
     }]);
 

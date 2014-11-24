@@ -20,6 +20,8 @@
     @include border-radius(10px);
     h3 {
       @extend .text-center;
+      color: $color-text;
+      background-color: white;
     }
     p {
       margin-bottom: 30px;

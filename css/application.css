@@ -5309,13 +5309,22 @@ h2 {
 h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
-  font-size: 2em; }
+  font-size: 2em;
+  padding: 0.5em;
+  background-color: #2B4946;
+  color: white; }
+
+h4 {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  font-size: 1.5em; }
 
 img.logo {
   margin-top: 2em; }
 
 ul.top-nav {
   margin-top: 2em;
+  margin-bottom: 3em;
   font-family: "Raleway", sans-serif;
   font-size: 1.42em; }
   ul.top-nav li a {
@@ -5355,6 +5364,9 @@ ul.top-nav {
     -moz-border-radius: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px; }
+    #store .product h3 {
+      color: #555555;
+      background: white; }
     #store .product p {
       margin-bottom: 30px; }
     #store .product .btn-product {
@@ -5389,5 +5401,22 @@ ul.top-nav {
         #store .product .btn-product:hover .badge {
           color: #DC254F;
           background-color: white; }
+
+#what-we-do {
+  margin-bottom: 5em; }
+  #what-we-do h3 {
+    background-color: #2C3744; }
+  #what-we-do p {
+    font-size: 1.5em; }
+
+#who-we-are {
+  margin-top: 3em; }
+  #who-we-are img.us {
+    width: 100%; }
+  #who-we-are .heading {
+    margin-bottom: 2em;
+    padding: 0.5em;
+    background-color: #2B4946;
+    color: white; }
 
 /*# sourceMappingURL=application.css.map */

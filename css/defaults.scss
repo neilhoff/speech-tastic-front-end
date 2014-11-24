@@ -24,4 +24,13 @@ h3 {
   font-family: $h3-font;
   font-weight: $h3-font-weight;
   font-size: $h3-font-size;
+  padding: 0.5em;
+  background-color: $blue-green;
+  color: white;
+}
+
+h4 {
+  font-family: $h4-font;
+  font-weight: $h4-font-weight;
+  font-size: $h4-font-size;
 }
