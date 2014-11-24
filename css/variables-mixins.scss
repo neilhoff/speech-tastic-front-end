@@ -1,20 +1,24 @@
 // Fonts
-@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300); //14px = 1em
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,100,200,300); //14px = 1em
 
 $font-default:            'Raleway', sans-serif;
 $font-header:             'Raleway', sans-serif;
 
 $h1-font:                 $font-header;
-$h1-font-weight:          200;
-$h1-font-size:            2.85em;
+$h1-font-weight:          100;
+$h1-font-size:            4em;
 
 $h2-font:                 $font-header;
-$h2-font-weight:          400;
-$h2-font-size:            2em;
+$h2-font-weight:          100;
+$h2-font-size:            3em;
 
 $h3-font:                 $font-header;
-$h3-font-weight:          200;
-$h3-font-size:            1.2em;
+$h3-font-weight:          400;
+$h3-font-size:            2em;
+
+$h4-font:                 $font-header;
+$h4-font-weight:          400;
+$h4-font-size:            1.5em;
 
 $paragraph-font:          $font-default;
 $paragraph-font-weight:   400;
@@ -22,7 +26,7 @@ $paragraph-font-size:     1em;
 
 
 // Colors
-
+// Theme from: kuler.adobe.com/#themes/rating?time=30
 $blue-gray:         #2C3744;
 $pink:              #DC254F;
 $dark-blue:         #1E282C;
@@ -31,3 +35,14 @@ $blue-green:        #2B4946;
 
 $color-text:        #555555;
 $color-background:  #ffffff;
+$color-border:      lighten(#555555, 50%);
+
+
+// Mix-ins
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}

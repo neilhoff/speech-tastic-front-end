@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACP,KAAK,EAAE,KAAK;EACZ,MAAM,EAAE,eAAe;EACvB,KAAK,EAAE,IAAI",
+"sources": ["store.scss"],
+"names": [],
+"file": "store.css"
+}

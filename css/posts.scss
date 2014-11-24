@@ -11,3 +11,15 @@
   }
 }
 
+.show-post {
+  margin-top: 50px;
+  @extend .center-block;
+  width: 600px;
+  .title {
+    @extend .text-center;
+  }
+  .desc {
+    margin-top: 10px;
+  }
+}
+

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
-@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,200,300);
+@import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,100,200,300);
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1065,7 +1065,7 @@ mark,
 .text-right {
   text-align: right; }
 
-.text-center {
+.text-center, .show-post .title, #store .product h3 {
   text-align: center; }
 
 .text-justify {
@@ -5084,7 +5084,7 @@ button.close {
 .clearfix:after {
   clear: both; }
 
-.center-block, .latest-posts .post {
+.center-block, .latest-posts .post, .show-post {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -5298,29 +5298,29 @@ p {
 
 h1 {
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  font-size: 2.85em; }
+  font-weight: 100;
+  font-size: 4em; }
 
 h2 {
   font-family: "Raleway", sans-serif;
-  font-weight: 400;
-  font-size: 2em; }
+  font-weight: 100;
+  font-size: 3em; }
 
 h3 {
   font-family: "Raleway", sans-serif;
-  font-weight: 200;
-  font-size: 1.2em; }
+  font-weight: 400;
+  font-size: 2em; }
 
 img.logo {
   margin-top: 2em; }
 
 ul.top-nav {
-  margin-top: 4em;
+  margin-top: 2em;
   font-family: "Raleway", sans-serif;
   font-size: 1.42em; }
   ul.top-nav li a {
     color: #555555;
-    font-weight: 200; }
+    font-weight: 400; }
 
 .latest-posts {
   margin-top: 50px; }
@@ -5329,5 +5329,65 @@ ul.top-nav {
     .latest-posts .post p.desc {
       margin-left: 8px;
       margin-top: 10px; }
+
+.show-post {
+  margin-top: 50px;
+  width: 600px; }
+  .show-post .desc {
+    margin-top: 10px; }
+
+#store {
+  margin-top: 5em; }
+  #store .product-group {
+    background-color: #2C3744;
+    color: white;
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  #store .product {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 365px;
+    padding: 20px;
+    float: left;
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px; }
+    #store .product p {
+      margin-bottom: 30px; }
+    #store .product .btn-product {
+      color: white;
+      background-color: #5A9FA3;
+      border-color: #5A9FA3; }
+      #store .product .btn-product:hover, #store .product .btn-product:focus, #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
+        color: white;
+        background-color: #487f82;
+        border-color: #44797c; }
+      #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
+        background-image: none; }
+      #store .product .btn-product.disabled, #store .product .btn-product.disabled:hover, #store .product .btn-product.disabled:focus, #store .product .btn-product.disabled:active, #store .product .btn-product.disabled.active, #store .product .btn-product[disabled], #store .product .btn-product[disabled]:hover, #store .product .btn-product[disabled]:focus, #store .product .btn-product[disabled]:active, #store .product .btn-product[disabled].active, fieldset[disabled] #store .product .btn-product, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:focus, fieldset[disabled] #store .product .btn-product:active, fieldset[disabled] #store .product .btn-product.active {
+        background-color: #5A9FA3;
+        border-color: #5A9FA3; }
+      #store .product .btn-product .badge {
+        color: #5A9FA3;
+        background-color: white; }
+      #store .product .btn-product:hover {
+        color: white;
+        background-color: #DC254F;
+        border-color: #DC254F; }
+        #store .product .btn-product:hover:hover, #store .product .btn-product:hover:focus, #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
+          color: white;
+          background-color: #b21c3f;
+          border-color: #a91b3c; }
+        #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
+          background-image: none; }
+        #store .product .btn-product:hover.disabled, #store .product .btn-product:hover.disabled:hover, #store .product .btn-product:hover.disabled:focus, #store .product .btn-product:hover.disabled:active, #store .product .btn-product:hover.disabled.active, #store .product .btn-product:hover[disabled], #store .product .btn-product:hover[disabled]:hover, #store .product .btn-product:hover[disabled]:focus, #store .product .btn-product:hover[disabled]:active, #store .product .btn-product:hover[disabled].active, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:hover:hover, fieldset[disabled] #store .product .btn-product:hover:focus, fieldset[disabled] #store .product .btn-product:hover:active, fieldset[disabled] #store .product .btn-product:hover.active {
+          background-color: #DC254F;
+          border-color: #DC254F; }
+        #store .product .btn-product:hover .badge {
+          color: #DC254F;
+          background-color: white; }
 
 /*# sourceMappingURL=application.css.map */
