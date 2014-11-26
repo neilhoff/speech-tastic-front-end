@@ -4,6 +4,7 @@
         <link rel="stylesheet" type="text/css" href="css/application.css?v=1">
 
         <script src="bower_components/jquery/dist/jquery.min.js"></script>
+        <script src="bower_components/bootstrap-sass-official/assets/javascripts/bootstrap.js"></script>
         <script src="vendor/social-count/socialcount.min.js"></script>
         <script src="bower_components/angular/angular.min.js"></script>
         <script src="bower_components/angular-route/angular-route.js"></script>
@@ -16,14 +17,9 @@
         <title>Speech-Tastic</title>
     </head>
     <body>
+        <top-nav></top-nav>
         <div class="container">
-            <a href="/"><img src="images/title.png" alt="Speech-Tastic" class="img-responsive center-block logo"></a>
-
-
-                <top-nav></top-nav>
-
-
-                <div ng-view></div>
+            <div ng-view></div>
         </div>
     </body>
 </html>

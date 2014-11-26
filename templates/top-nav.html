@@ -1,7 +1,23 @@
-<ul class="nav nav-tabs nav-justified top-nav" ng-controller="HeaderController">
-    <li ng-class="{ active: isActive('/')}"><a href="#/">Home</a></li>
-    <li ng-class="{ active: isActive('/blog')}"><a href="#/blog">blog</a></li>
-    <li ng-class="{ active: isActive('/store')}"><a href="#/store">Store</a></li>
-    <li ng-class="{ active: isActive('/about')}"><a href="#/about">About</a></li>
-</ul>
+<nav class="navbar navbar-default" ng-controller="HeaderController" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#/">
+                <img src="images/title.png" alt="Speech-Tastic">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-right" id="nav-links">
+            <ul class="nav navbar-nav">
+                <li ng-class="{ active: isActive('/blog')}"><a href="#/blog">blog</a></li>
+                <li ng-class="{ active: isActive('/store')}"><a href="#/store">Store</a></li>
+                <li ng-class="{ active: isActive('/about')}"><a href="#/about">About</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
 

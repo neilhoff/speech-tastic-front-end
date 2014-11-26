@@ -5320,6 +5320,9 @@ h4 {
   font-weight: 400;
   font-size: 1.5em; }
 
+.navbar-brand {
+  padding-top: 0px; }
+
 img.logo {
   margin-top: 2em; }
 
@@ -5332,14 +5335,11 @@ ul.top-nav {
     color: #555555;
     font-weight: 400; }
 
-.latest-posts {
-  margin-top: 50px; }
-  .latest-posts .post p.desc {
-    font-size: 1.4em;
-    margin-top: 10px; }
+.latest-posts .post p.desc {
+  font-size: 1.4em;
+  margin-top: 10px; }
 
 .show-post {
-  margin-top: 50px;
   width: 600px; }
   .show-post p.desc {
     margin-top: 10px;
@@ -5348,62 +5348,60 @@ ul.top-nav {
     margin-top: 1em;
     width: 335px; }
 
-#store {
-  margin-top: 5em; }
-  #store .product-group {
-    background-color: #2C3744;
+#store .product-group {
+  background-color: #2C3744;
+  color: white;
+  padding: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em; }
+#store .product {
+  margin-right: 1em;
+  margin-bottom: 1em;
+  max-width: 365px;
+  padding: 20px;
+  float: left;
+  border: 1px solid #d4d4d4;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+  #store .product h3 {
+    color: #555555;
+    background-color: white; }
+  #store .product p {
+    margin-bottom: 30px; }
+  #store .product .btn-product {
     color: white;
-    padding: 0.5em;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  #store .product {
-    margin-right: 1em;
-    margin-bottom: 1em;
-    max-width: 365px;
-    padding: 20px;
-    float: left;
-    border: 1px solid #d4d4d4;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    -ms-border-radius: 10px;
-    border-radius: 10px; }
-    #store .product h3 {
-      color: #555555;
-      background-color: white; }
-    #store .product p {
-      margin-bottom: 30px; }
-    #store .product .btn-product {
+    background-color: #5A9FA3;
+    border-color: #5A9FA3; }
+    #store .product .btn-product:hover, #store .product .btn-product:focus, #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
       color: white;
+      background-color: #487f82;
+      border-color: #44797c; }
+    #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
+      background-image: none; }
+    #store .product .btn-product.disabled, #store .product .btn-product.disabled:hover, #store .product .btn-product.disabled:focus, #store .product .btn-product.disabled:active, #store .product .btn-product.disabled.active, #store .product .btn-product[disabled], #store .product .btn-product[disabled]:hover, #store .product .btn-product[disabled]:focus, #store .product .btn-product[disabled]:active, #store .product .btn-product[disabled].active, fieldset[disabled] #store .product .btn-product, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:focus, fieldset[disabled] #store .product .btn-product:active, fieldset[disabled] #store .product .btn-product.active {
       background-color: #5A9FA3;
       border-color: #5A9FA3; }
-      #store .product .btn-product:hover, #store .product .btn-product:focus, #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
+    #store .product .btn-product .badge {
+      color: #5A9FA3;
+      background-color: white; }
+    #store .product .btn-product:hover {
+      color: white;
+      background-color: #DC254F;
+      border-color: #DC254F; }
+      #store .product .btn-product:hover:hover, #store .product .btn-product:hover:focus, #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
         color: white;
-        background-color: #487f82;
-        border-color: #44797c; }
-      #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
+        background-color: #b21c3f;
+        border-color: #a91b3c; }
+      #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
         background-image: none; }
-      #store .product .btn-product.disabled, #store .product .btn-product.disabled:hover, #store .product .btn-product.disabled:focus, #store .product .btn-product.disabled:active, #store .product .btn-product.disabled.active, #store .product .btn-product[disabled], #store .product .btn-product[disabled]:hover, #store .product .btn-product[disabled]:focus, #store .product .btn-product[disabled]:active, #store .product .btn-product[disabled].active, fieldset[disabled] #store .product .btn-product, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:focus, fieldset[disabled] #store .product .btn-product:active, fieldset[disabled] #store .product .btn-product.active {
-        background-color: #5A9FA3;
-        border-color: #5A9FA3; }
-      #store .product .btn-product .badge {
-        color: #5A9FA3;
-        background-color: white; }
-      #store .product .btn-product:hover {
-        color: white;
+      #store .product .btn-product:hover.disabled, #store .product .btn-product:hover.disabled:hover, #store .product .btn-product:hover.disabled:focus, #store .product .btn-product:hover.disabled:active, #store .product .btn-product:hover.disabled.active, #store .product .btn-product:hover[disabled], #store .product .btn-product:hover[disabled]:hover, #store .product .btn-product:hover[disabled]:focus, #store .product .btn-product:hover[disabled]:active, #store .product .btn-product:hover[disabled].active, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:hover:hover, fieldset[disabled] #store .product .btn-product:hover:focus, fieldset[disabled] #store .product .btn-product:hover:active, fieldset[disabled] #store .product .btn-product:hover.active {
         background-color: #DC254F;
         border-color: #DC254F; }
-        #store .product .btn-product:hover:hover, #store .product .btn-product:hover:focus, #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
-          color: white;
-          background-color: #b21c3f;
-          border-color: #a91b3c; }
-        #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
-          background-image: none; }
-        #store .product .btn-product:hover.disabled, #store .product .btn-product:hover.disabled:hover, #store .product .btn-product:hover.disabled:focus, #store .product .btn-product:hover.disabled:active, #store .product .btn-product:hover.disabled.active, #store .product .btn-product:hover[disabled], #store .product .btn-product:hover[disabled]:hover, #store .product .btn-product:hover[disabled]:focus, #store .product .btn-product:hover[disabled]:active, #store .product .btn-product:hover[disabled].active, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:hover:hover, fieldset[disabled] #store .product .btn-product:hover:focus, fieldset[disabled] #store .product .btn-product:hover:active, fieldset[disabled] #store .product .btn-product:hover.active {
-          background-color: #DC254F;
-          border-color: #DC254F; }
-        #store .product .btn-product:hover .badge {
-          color: #DC254F;
-          background-color: white; }
+      #store .product .btn-product:hover .badge {
+        color: #DC254F;
+        background-color: white; }
 
 #what-we-do {
   margin-bottom: 5em; }

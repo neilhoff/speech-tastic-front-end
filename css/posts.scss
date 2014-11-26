@@ -1,9 +1,6 @@
 .latest-posts {
-  margin-top: 50px;
   .post {
-    p.date {
 
-    }
     p.desc {
       @extend .text-left;
       font-size: 1.4em;
@@ -13,7 +10,6 @@
 }
 
 .show-post {
-  margin-top: 50px;
   @extend .center-block;
   width: 600px;
   .title {
