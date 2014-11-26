@@ -25,6 +25,12 @@
                     templateUrl: 'templates/about.html',
                     controller: 'AboutController'
                 })
+
+                .when('/blog', {
+                    templateUrl: 'templates/latest-posts.html',
+                    controller: 'LatestPostsController'
+                })
+
             ;
         }]);
 
@@ -60,6 +66,7 @@
 
     }]);
 
+
     // Directives
     app.directive('topNav', function(){
         return {
@@ -67,6 +74,7 @@
             templateUrl: 'templates/top-nav.html'
         };
     });
+
 
 
 

@@ -1,11 +1,12 @@
 .latest-posts {
   margin-top: 50px;
   .post {
-    @extend .center-block;
-    width: 450px;
+    p.date {
+
+    }
     p.desc {
       @extend .text-left;
-      margin-left: 8px;
+      font-size: 1.4em;
       margin-top: 10px;
     }
   }
@@ -18,8 +19,14 @@
   .title {
     @extend .text-center;
   }
-  .desc {
+  p.desc {
     margin-top: 10px;
+    font-size: 1.4em;
+  }
+  .socialcount {
+    margin-top: 1em;
+    width: 335px;
+    @extend .center-block;
   }
 }
 

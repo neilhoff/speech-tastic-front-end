@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+@import url(../vendor/social-count/socialcount-with-icons.min.css);
 @import url(http://fonts.googleapis.com/css?family=Raleway:500,600,700,400,100,200,300);
 html {
   font-family: sans-serif;
@@ -5084,7 +5085,7 @@ button.close {
 .clearfix:after {
   clear: both; }
 
-.center-block, .latest-posts .post, .show-post {
+.center-block, .show-post, .show-post .socialcount {
   display: block;
   margin-left: auto;
   margin-right: auto; }
@@ -5333,17 +5334,19 @@ ul.top-nav {
 
 .latest-posts {
   margin-top: 50px; }
-  .latest-posts .post {
-    width: 450px; }
-    .latest-posts .post p.desc {
-      margin-left: 8px;
-      margin-top: 10px; }
+  .latest-posts .post p.desc {
+    font-size: 1.4em;
+    margin-top: 10px; }
 
 .show-post {
   margin-top: 50px;
   width: 600px; }
-  .show-post .desc {
-    margin-top: 10px; }
+  .show-post p.desc {
+    margin-top: 10px;
+    font-size: 1.4em; }
+  .show-post .socialcount {
+    margin-top: 1em;
+    width: 335px; }
 
 #store {
   margin-top: 5em; }
@@ -5366,7 +5369,7 @@ ul.top-nav {
     border-radius: 10px; }
     #store .product h3 {
       color: #555555;
-      background: white; }
+      background-color: white; }
     #store .product p {
       margin-bottom: 30px; }
     #store .product .btn-product {
