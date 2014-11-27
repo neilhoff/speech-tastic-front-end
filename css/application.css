@@ -5291,7 +5291,7 @@ button.close {
     display: none !important; } }
 body {
   color: #555555;
-  padding-top: 50px; }
+  padding-top: 40px; }
 
 p {
   font-family: "Raleway", sans-serif;
@@ -5322,19 +5322,28 @@ h4 {
 .navbar-brand {
   padding-top: 0px; }
 
-.text-vertical-center, .page-title, .page-desc {
+.text-vertical-center, .page-info .page-title-container .page-title {
   display: table-cell;
   vertical-align: middle; }
 
-.page-title {
-  text-align: center;
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto; }
-
-.page-desc {
-  height: 150px; }
+.page-info {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .page-info .page-title-container {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-info .page-title-container .page-title {
+      text-align: center;
+      width: 150px;
+      height: 150px; }
+  .page-info .page-desc-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto; }
+    .page-info .page-desc-container .page-desc {
+      text-align: center; }
 
 .circle {
   -webkit-border-radius: 50%;

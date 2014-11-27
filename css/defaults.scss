@@ -1,6 +1,6 @@
 body{
   color: $color-text;
-  padding-top: 50px;
+  padding-top: 40px;
 }
 
 p {
@@ -43,18 +43,32 @@ h4 {
   vertical-align: middle;
 }
 
-.page-title {
-  @extend .text-vertical-center;
-  text-align: center;
-  width: 150px;
-  height: 150px;
-  margin-left: auto;
-  margin-right: auto;
+.page-info {
+  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  
+  .page-title-container {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    .page-title {
+      @extend .text-vertical-center;
+      text-align: center;
+      width: 150px;
+      height: 150px;
 
-}
-.page-desc {
-  height: 150px;
-  @extend .text-vertical-center;
+    }
+  }
+  .page-desc-container {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    .page-desc {
+      text-align: center;
+    }
+  }
+
 }
 
 .circle {
