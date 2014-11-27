@@ -7,8 +7,8 @@
             $routeProvider
 
                 .when('/', {
-                    templateUrl: 'templates/latest-posts.html',
-                    controller: 'LatestPostsController'
+                    templateUrl: 'templates/home.html',
+                    controller: 'HomeController'
                 })
 
                 .when('/posts/:slug', {
@@ -37,8 +37,14 @@
 
 
     // Controllers
-    app.controller('HeaderController', ['$scope', '$location', function ($scope, $location){
-        $scope.isActive = function (viewLocation) {
+    app.controller('HomeController', ['$scope', '$http', function($scope, $http) {
+
+
+    }]);
+
+    app.controller('ActivePageController', ['$location', function ($location){
+        var page = this;
+        page.isActive = function (viewLocation) {
             return viewLocation === $location.path();
         };
     }]);
@@ -61,7 +67,7 @@
 
     }]);
 
-    app.controller('LatestPostsController', ['$scope', '$http', function($scope, $http) {
+    app.controller('AboutController', ['$scope', '$http', function($scope, $http) {
 
 
     }]);

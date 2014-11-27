@@ -1,2 +1,4 @@
 .idea
 *.db
+*.picasaoriginals
+images/.picasa.ini

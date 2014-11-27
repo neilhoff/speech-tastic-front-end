@@ -16,9 +16,9 @@
 
         <title>Speech-Tastic</title>
     </head>
-    <body>
+    <body ng-controller="ActivePageController as page">
         <top-nav></top-nav>
-        <div class="container">
+        <div ng-class="{ container: !page.isActive('/')}">
             <div ng-view></div>
         </div>
     </body>

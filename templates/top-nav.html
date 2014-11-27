@@ -1,4 +1,4 @@
-<nav class="navbar navbar-default" ng-controller="HeaderController" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-links">
@@ -13,9 +13,9 @@
         </div>
         <div class="collapse navbar-collapse navbar-right" id="nav-links">
             <ul class="nav navbar-nav">
-                <li ng-class="{ active: isActive('/blog')}"><a href="#/blog">blog</a></li>
-                <li ng-class="{ active: isActive('/store')}"><a href="#/store">Store</a></li>
-                <li ng-class="{ active: isActive('/about')}"><a href="#/about">About</a></li>
+                <li ng-class="{ active: page.isActive('/blog')}"><a href="#/blog">Blog</a></li>
+                <li ng-class="{ active: page.isActive('/store')}"><a href="#/store">Store</a></li>
+                <li ng-class="{ active: page.isActive('/about')}"><a href="#/about">About</a></li>
             </ul>
         </div>
     </div>
