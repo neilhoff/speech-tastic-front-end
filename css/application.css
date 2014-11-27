@@ -1060,7 +1060,7 @@ mark,
   background-color: #fcf8e3;
   padding: .2em; }
 
-.text-left, .latest-posts .post p.desc {
+.text-left, #latest-posts .post p.desc {
   text-align: left; }
 
 .text-right {
@@ -5312,9 +5312,7 @@ h3 {
   font-family: "Raleway", sans-serif;
   font-weight: 400;
   font-size: 2em;
-  padding: 0.5em;
-  background-color: #2B4946;
-  color: white; }
+  padding: 0.5em; }
 
 h4 {
   font-family: "Raleway", sans-serif;
@@ -5324,11 +5322,50 @@ h4 {
 .navbar-brand {
   padding-top: 0px; }
 
+.text-vertical-center, .page-title, .page-desc {
+  display: table-cell;
+  vertical-align: middle; }
+
+.page-title {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-desc {
+  height: 150px; }
+
 .circle {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
-  border-radius: 50%; }
+  border-radius: 50%;
+  background-color: "transparent"; }
+
+.circle-pink {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #DC254F;
+  color: white; }
+
+.circle-blue-gray {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #2C3744;
+  color: white; }
+
+.circle-light-blue {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #5A9FA3;
+  color: white; }
 
 .btn-pink {
   color: white;
@@ -5466,9 +5503,11 @@ h4 {
   #services h2 {
     margin-bottom: 20px; }
 
-.latest-posts .post p.desc {
-  font-size: 1.4em;
+#latest-posts {
   margin-top: 10px; }
+  #latest-posts .post p.desc {
+    font-size: 1.4em;
+    margin-top: 10px; }
 
 .show-post {
   width: 600px; }
@@ -5479,76 +5518,80 @@ h4 {
     margin-top: 1em;
     width: 335px; }
 
-#store .product-group {
-  background-color: #2C3744;
-  color: white;
-  padding: 0.5em;
-  margin-top: 1em;
-  margin-bottom: 1em; }
-#store .product {
-  margin-right: 1em;
-  margin-bottom: 1em;
-  max-width: 365px;
-  padding: 20px;
-  float: left;
-  border: 1px solid #d4d4d4;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -ms-border-radius: 10px;
-  border-radius: 10px; }
-  #store .product h3 {
-    color: #555555;
-    background-color: white; }
-  #store .product p {
-    margin-bottom: 30px; }
-  #store .product .btn-product {
+#store {
+  margin-top: 10px; }
+  #store .product-group {
+    background-color: #2C3744;
     color: white;
-    background-color: #5A9FA3;
-    border-color: #5A9FA3; }
-    #store .product .btn-product:hover, #store .product .btn-product:focus, #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
+    padding: 0.5em;
+    margin-top: 1em;
+    margin-bottom: 1em; }
+  #store .product {
+    margin-right: 1em;
+    margin-bottom: 1em;
+    max-width: 365px;
+    padding: 20px;
+    float: left;
+    border: 1px solid #d4d4d4;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    border-radius: 10px;
+    background-color: "transparent"; }
+    #store .product h3 {
+      color: #555555;
+      background-color: white; }
+    #store .product p {
+      margin-bottom: 30px; }
+    #store .product .btn-product {
       color: white;
-      background-color: #487f82;
-      border-color: #44797c; }
-    #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
-      background-image: none; }
-    #store .product .btn-product.disabled, #store .product .btn-product.disabled:hover, #store .product .btn-product.disabled:focus, #store .product .btn-product.disabled:active, #store .product .btn-product.disabled.active, #store .product .btn-product[disabled], #store .product .btn-product[disabled]:hover, #store .product .btn-product[disabled]:focus, #store .product .btn-product[disabled]:active, #store .product .btn-product[disabled].active, fieldset[disabled] #store .product .btn-product, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:focus, fieldset[disabled] #store .product .btn-product:active, fieldset[disabled] #store .product .btn-product.active {
       background-color: #5A9FA3;
       border-color: #5A9FA3; }
-    #store .product .btn-product .badge {
-      color: #5A9FA3;
-      background-color: white; }
-    #store .product .btn-product:hover {
-      color: white;
-      background-color: #DC254F;
-      border-color: #DC254F; }
-      #store .product .btn-product:hover:hover, #store .product .btn-product:hover:focus, #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
+      #store .product .btn-product:hover, #store .product .btn-product:focus, #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
         color: white;
-        background-color: #b21c3f;
-        border-color: #a91b3c; }
-      #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
+        background-color: #487f82;
+        border-color: #44797c; }
+      #store .product .btn-product:active, #store .product .btn-product.active, .open > #store .product .btn-product.dropdown-toggle {
         background-image: none; }
-      #store .product .btn-product:hover.disabled, #store .product .btn-product:hover.disabled:hover, #store .product .btn-product:hover.disabled:focus, #store .product .btn-product:hover.disabled:active, #store .product .btn-product:hover.disabled.active, #store .product .btn-product:hover[disabled], #store .product .btn-product:hover[disabled]:hover, #store .product .btn-product:hover[disabled]:focus, #store .product .btn-product:hover[disabled]:active, #store .product .btn-product:hover[disabled].active, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:hover:hover, fieldset[disabled] #store .product .btn-product:hover:focus, fieldset[disabled] #store .product .btn-product:hover:active, fieldset[disabled] #store .product .btn-product:hover.active {
+      #store .product .btn-product.disabled, #store .product .btn-product.disabled:hover, #store .product .btn-product.disabled:focus, #store .product .btn-product.disabled:active, #store .product .btn-product.disabled.active, #store .product .btn-product[disabled], #store .product .btn-product[disabled]:hover, #store .product .btn-product[disabled]:focus, #store .product .btn-product[disabled]:active, #store .product .btn-product[disabled].active, fieldset[disabled] #store .product .btn-product, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:focus, fieldset[disabled] #store .product .btn-product:active, fieldset[disabled] #store .product .btn-product.active {
+        background-color: #5A9FA3;
+        border-color: #5A9FA3; }
+      #store .product .btn-product .badge {
+        color: #5A9FA3;
+        background-color: white; }
+      #store .product .btn-product:hover {
+        color: white;
         background-color: #DC254F;
         border-color: #DC254F; }
-      #store .product .btn-product:hover .badge {
-        color: #DC254F;
-        background-color: white; }
+        #store .product .btn-product:hover:hover, #store .product .btn-product:hover:focus, #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
+          color: white;
+          background-color: #b21c3f;
+          border-color: #a91b3c; }
+        #store .product .btn-product:hover:active, #store .product .btn-product:hover.active, .open > #store .product .btn-product:hover.dropdown-toggle {
+          background-image: none; }
+        #store .product .btn-product:hover.disabled, #store .product .btn-product:hover.disabled:hover, #store .product .btn-product:hover.disabled:focus, #store .product .btn-product:hover.disabled:active, #store .product .btn-product:hover.disabled.active, #store .product .btn-product:hover[disabled], #store .product .btn-product:hover[disabled]:hover, #store .product .btn-product:hover[disabled]:focus, #store .product .btn-product:hover[disabled]:active, #store .product .btn-product:hover[disabled].active, fieldset[disabled] #store .product .btn-product:hover, fieldset[disabled] #store .product .btn-product:hover:hover, fieldset[disabled] #store .product .btn-product:hover:focus, fieldset[disabled] #store .product .btn-product:hover:active, fieldset[disabled] #store .product .btn-product:hover.active {
+          background-color: #DC254F;
+          border-color: #DC254F; }
+        #store .product .btn-product:hover .badge {
+          color: #DC254F;
+          background-color: white; }
 
-#what-we-do {
-  margin-bottom: 5em; }
-  #what-we-do h3 {
-    background-color: #2C3744; }
-  #what-we-do p {
-    font-size: 1.5em; }
-
-#who-we-are {
-  margin-top: 3em; }
-  #who-we-are img.us {
-    width: 100%; }
-  #who-we-are .heading {
-    margin-bottom: 2em;
-    padding: 0.5em;
-    background-color: #2B4946;
-    color: white; }
+#about {
+  margin-top: 10px; }
+  #about #what-we-do {
+    margin-bottom: 5em; }
+    #about #what-we-do h3 {
+      background-color: #2C3744; }
+    #about #what-we-do p {
+      font-size: 1.5em; }
+  #about #who-we-are {
+    margin-top: 3em; }
+    #about #who-we-are img.us {
+      width: 100%; }
+    #about #who-we-are .heading {
+      margin-bottom: 2em;
+      padding: 0.5em;
+      background-color: #2B4946;
+      color: white; }
 
 /*# sourceMappingURL=application.css.map */

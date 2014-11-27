@@ -26,8 +26,6 @@ h3 {
   font-weight: $h3-font-weight;
   font-size: $h3-font-size;
   padding: 0.5em;
-  background-color: $blue-green;
-  color: white;
 }
 
 h4 {
@@ -40,8 +38,42 @@ h4 {
   padding-top: 0px;
 }
 
+.text-vertical-center {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.page-title {
+  @extend .text-vertical-center;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+.page-desc {
+  height: 150px;
+  @extend .text-vertical-center;
+}
+
 .circle {
   @include border-radius(50%);
+}
+
+.circle-pink {
+  @include border-radius(50%, $pink);
+  color: white;
+}
+
+.circle-blue-gray{
+  @include border-radius(50%, $blue-gray);
+  color: white;
+}
+
+.circle-light-blue{
+  @include border-radius(50%, $light-blue);
+  color: white;
 }
 
 .btn-pink {

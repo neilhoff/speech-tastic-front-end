@@ -40,10 +40,11 @@ $color-border:      lighten(#555555, 50%);
 
 // Mix-ins
 
-@mixin border-radius($radius) {
+@mixin border-radius($radius, $bg-color:"transparent") {
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
   -ms-border-radius: $radius;
   border-radius: $radius;
+  background-color: $bg-color;
 }
 
