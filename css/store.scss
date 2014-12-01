@@ -1,40 +1,56 @@
 #store {
   margin-top: 10px;
-  .product-group {
-    background-color: $blue-gray;
+  .product-group-title {
+    background: $blue-green;
     color: white;
-    padding: 0.5em;
-    margin-top: 1em;
-    margin-bottom: 1em;
   }
+  .product-group {
+    text-align: center;
+    margin: 0 auto;
+    @extend .container;
+    .product {
+      margin-right: 1em;
+      margin-bottom: 2em;
+      max-width: 280px;
+      padding: 10px;
+      //border: 1px solid $color-border;
+      display: inline-block;
+      vertical-align: top;
+      @include border-radius(10px);
+      .product-info {
+        height: 250px;
+        img {
+          @include border-radius(20px);
+          width: 75px;
+          height: 75px;
+        }
 
-  .product {
-    margin-right: 1em;
-    margin-bottom: 1em;
-    max-width: 365px;
-    padding: 20px;
-    float: left;
-    border: 1px solid $color-border;
+        .title {
+          padding: 10px;
+          font-size: 1.2em;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
 
-    @include border-radius(10px);
-    h3 {
-      @extend .text-center;
-      color: $color-text;
-      background-color: white;
-    }
-    p {
-      margin-bottom: 30px;
-    }
-    .btn-product {
-      @include button-variant(white, $light-blue, $light-blue);
-      &:hover {
-        @include button-variant(white, $pink, $pink);
+        p {
+          max-height: 80px;
+          text-align: left;
+          overflow: hidden;
+          margin-bottom: 30px;
+        }
       }
 
-    }
-    &:hover {
+      .btn-product {
+        @include button-variant(white, $light-blue, $light-blue);
+        &:hover {
+          @include button-variant(white, $pink, $pink);
+        }
 
+      }
+      &:hover {
+
+      }
     }
   }
-
 }
