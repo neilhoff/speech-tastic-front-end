@@ -48,3 +48,11 @@ $color-border:      lighten(#555555, 50%);
   background-color: $bg-color;
 }
 
+@mixin transition($transition-property, $transition-time) {
+  -webkit-transition: $transition-property $transition-time ;
+  -moz-transition: $transition-property $transition-time;
+  -ms-transition: $transition-property $transition-time;
+  -o-transition: $transition-property $transition-time;
+  transition: $transition-property $transition-time;
+}
+

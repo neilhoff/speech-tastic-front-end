@@ -81,6 +81,13 @@
         };
     });
 
+    // Directives
+    app.directive('footerSection', function(){
+        return {
+            restrict: 'E',
+            templateUrl: 'templates/footer.html'
+        };
+    });
 
 
 
